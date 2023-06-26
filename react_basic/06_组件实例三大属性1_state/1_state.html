@@ -36,7 +36,8 @@
 				console.log('render', "this-->", this);
 				//读取状态
 				const { isHot, wind } = this.state
-				// react 的插值表达式是{}，Vue是{{}}，react的onClick的C是大写，原生的是全小写
+				// react 的插值表达式是{}，Vue是{{}}，react的onClick的C是大写，原生的是全小写，原生onclick后面接的是字符串，React后面接的要加{}
+				// react绑定事件的时候不要传(),否则绑定的就是函数的返回值而不是返回函数本身
 				return <h1 onClick={this.changeWeather}>
 					今天天气很{isHot ? '炎热' : '凉爽'}，{wind}
 				</h1>
