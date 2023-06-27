@@ -29,7 +29,7 @@
 			}
 
 			//自定义方法————要用赋值语句的形式+箭头函数
-			changeWeather = () => {
+			changeWeather = () => {  // 箭头函数没有自己的this，他会往外找，这里函数内部的this相当于weather实例对象的this
 				const isHot = this.state.isHot
 				this.setState({ isHot: !isHot })
 			}
