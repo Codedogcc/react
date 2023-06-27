@@ -12,7 +12,7 @@
 		let arr2 = [2, 4, 6, 8, 10]
 		console.log(...arr1, '...arr1'); //展开一个数组
 		let arr3 = [...arr1, ...arr2]//连接数组
-
+		console.log(...arr3, '...arr3'); //展开arr3
 		//在函数中使用
 		function sum(...numbers) {
 			return numbers.reduce((preValue, currentValue) => {
