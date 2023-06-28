@@ -21,7 +21,7 @@
 		//创建组件
 		class Login extends React.Component {
 			handleSubmit = (event) => {
-				event.preventDefault() //阻止表单提交，就不会在链接那里加参数
+				event.preventDefault() //阻止表单提交，就不会在链接那里加参数，表单提交会引发页面跳转
 				const { username, password } = this
 				alert(`你输入的用户名是：${username.value},你输入的密码是：${password.value}`)
 			}
