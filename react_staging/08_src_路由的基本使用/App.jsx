@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Link,Route} from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
 
@@ -29,8 +29,8 @@ export default class App extends Component {
 						<div className="panel">
 							<div className="panel-body">
 								{/* 注册路由 */}
-								<Route path="/about" component={About}/>
-								<Route path="/home" component={Home}/>
+								<Route path="/about" component={About} />
+								<Route path="/home" component={Home} />
 							</div>
 						</div>
 					</div>
